@@ -12,6 +12,7 @@
     "@vitejs/plugin-react": "^4.3.1",
     "finpulse-trading-platform": "file:..",
     "framer-motion": "^11.3.19",
+    "lightweight-charts": "^5.2.0",
     "lucide-react": "^0.468.0",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
