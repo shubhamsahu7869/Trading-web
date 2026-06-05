@@ -1,0 +1,14 @@
+{
+  "installCommand": "npm install",
+  "buildCommand": "",
+  "rewrites": [
+    {
+      "source": "/api/(.*)",
+      "destination": "/api/index.js"
+    },
+    {
+      "source": "/(.*)",
+      "destination": "/api/index.js"
+    }
+  ]
+}
