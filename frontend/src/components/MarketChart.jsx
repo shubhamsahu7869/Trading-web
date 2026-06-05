@@ -26,7 +26,7 @@ export default function MarketChart({ data = chartPoints, range = "1D" }) {
       autoSize: true,
       layout: {
         background: { type: ColorType.Solid, color: "#06111f" },
-        textColor: "#8fa3bf",
+        textColor: "#c4d4ea",
         fontFamily: "Inter, system-ui, sans-serif"
       },
       grid: {
@@ -39,14 +39,14 @@ export default function MarketChart({ data = chartPoints, range = "1D" }) {
         horzLine: { color: "rgba(226, 232, 240, .35)", width: 1, style: 3, labelBackgroundColor: "#0f172a" }
       },
       rightPriceScale: {
-        borderColor: "rgba(148, 163, 184, 0.18)",
+        borderColor: "rgba(148, 163, 184, 0.26)",
         scaleMargins: { top: 0.12, bottom: 0.2 }
       },
       timeScale: {
         borderColor: "rgba(148, 163, 184, 0.18)",
         timeVisible: true,
         secondsVisible: false,
-        rightOffset: 10,
+        rightOffset: 18,
         barSpacing: 11
       },
       handleScale: true,
@@ -148,7 +148,7 @@ export default function MarketChart({ data = chartPoints, range = "1D" }) {
   return (
     <div className="relative h-[360px] w-full overflow-hidden rounded-[30px] border border-slate-800 bg-[#06111f] shadow-2xl shadow-slate-950/20">
       <div className="pointer-events-none absolute inset-0 z-0 bg-[radial-gradient(circle_at_76%_18%,rgba(14,165,233,.20),transparent_22rem),linear-gradient(120deg,rgba(2,6,23,.95),rgba(8,31,49,.90))]" />
-      <div className="pointer-events-none absolute inset-y-0 right-0 z-20 w-44 bg-gradient-to-l from-[#06111f] via-[#06111f]/80 to-transparent" />
+      <div className="pointer-events-none absolute inset-y-0 right-0 z-[1] w-20 bg-gradient-to-l from-[#06111f]/25 to-transparent" />
       <div className="absolute left-5 top-4 z-30">
         <p className="text-xs font-black uppercase tracking-[.18em] text-slate-400">{range} premium live chart</p>
         <div className="mt-1 flex items-end gap-3">
